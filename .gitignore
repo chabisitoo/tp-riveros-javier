@@ -1,0 +1,21 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+
+# Dependencias y variables de entorno
+node_modules/
+.env
+
+# Archivos comprimidos y copias
+*.zip
+*.bak
+*-viejo.*
+
+# Vercel / Netlify
+.vercel/
+.netlify/
