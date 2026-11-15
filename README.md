@@ -68,7 +68,7 @@ Organización de `js/app.js`:
 
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/USUARIO/tp-riveros-javier.git
+   git clone https://github.com/chabisitoo/tp-riveros-javier.git
    ```
 2. Abrir `index.html` en el navegador (o con la extensión Live Server de VS Code).
 
