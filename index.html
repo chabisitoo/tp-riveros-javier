@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Explorador de ubicaciones · Rick and Morty</title>
+    <link rel="icon" href="img/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <script src="js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="encabezado">
+      <div class="marca">
+        <span class="marca-icono" aria-hidden="true">◎</span>
+        <div>
+          <h1>Explorador de ubicaciones</h1>
+          <p>Planetas, estaciones y dimensiones del universo de Rick and Morty</p>
+        </div>
+      </div>
+      <a class="enlace-api" href="https://rickandmortyapi.com/documentation" target="_blank" rel="noopener noreferrer">
+        Documentación de la API
+      </a>
+    </header>
+
+    <main class="contenedor">
+      <form id="formulario-busqueda" class="formulario" role="search" novalidate>
+        <div class="campo">
+          <label for="campo-nombre">Nombre de la ubicación</label>
+          <input
+            type="search"
+            id="campo-nombre"
+            name="nombre"
+            placeholder="Por ejemplo: Earth, Citadel"
+            autocomplete="off"
+            maxlength="40"
+          />
+        </div>
+
+        <div class="campo">
+          <label for="campo-tipo">Tipo</label>
+          <input
+            type="text"
+            id="campo-tipo"
+            name="tipo"
+            placeholder="Por ejemplo: Planet, Space station"
+            autocomplete="off"
+            maxlength="40"
+          />
+        </div>
+
+        <button type="submit" id="boton-buscar">Buscar</button>
+      </form>
+
+      <p id="mensaje-estado" class="mensaje" role="status" aria-live="polite">
+        Escribe un nombre, un tipo o ambos y presiona «Buscar».
+      </p>
+
+      <p id="contador-resultados" class="contador" hidden></p>
+
+      <section id="contenedor-resultados" class="resultados" aria-label="Ubicaciones encontradas"></section>
+    </main>
+
+    <footer class="pie">
+      <p>Trabajo Práctico · Javier Riveros · Fundamentos de Desarrollo Web</p>
+      <p>
+        Versión <span id="version">1.0</span> · Datos de
+        <a href="https://rickandmortyapi.com/" target="_blank" rel="noopener noreferrer">The Rick and Morty API</a>
+      </p>
+    </footer>
+  </body>
+</html>
