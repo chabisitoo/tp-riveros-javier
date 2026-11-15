@@ -10,7 +10,7 @@ al volver a abrir la página.
 
 ## Sitios publicados
 
-- GitHub Pages: https://USUARIO.github.io/tp-riveros-javier/
+- GitHub Pages: https://chabisitoo.github.io/tp-riveros-javier/
 - Vercel: https://tp-riveros-javier.vercel.app/
 
 ## Captura
